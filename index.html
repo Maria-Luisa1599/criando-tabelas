@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+        table {
+            -webkit-box-shadow: 12px 11px 11px 5px rgba(0, 0, 0, 0.29);
+            box-shadow: 12px 11px 11px 5px rgba(0, 0, 0, 0.29);
+            border: solid 1px gray;
+        }
+
+        table thead th {
+            background-color: black;
+            color: white
+        }
+
+        table tfoot td {
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+
+        table tbody tr:hover td {
+            background-color: #d7d4d4;
+            cursor: pointer
+        }
+    </style>
+</head>
+
+<body>
+    <table sumary="Nome e idade das pessoas" width="250" cellspacing="0" cellpadding="5" align="center">
+        <caption>Nome e idade das pessoas</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Tabela</th>
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Luisa</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Clara</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Bruna</td>
+                <td>14</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
